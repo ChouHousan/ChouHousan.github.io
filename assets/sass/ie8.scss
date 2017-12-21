@@ -4,41 +4,71 @@
 @import 'libs/skel';
 
 /*
-	Twenty by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Section/Article */
 
-	section,
-	article {
+	section, article {
 		> .last-child,
 		&.last-child {
 			margin-bottom: 0;
 		}
 	}
 
-/* Banner */
+/* Form */
 
-	#banner {
-		background-image: url('../../images/banner.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-
-		.inner {
-			background: _palette(banner, inner-bg);
+	form {
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select,
+		textarea {
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
-/* CTA  */
+/* Button */
 
-	#cta {
-		background-image: url('../../images/banner.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Header */
+
+	#nav {
+		ul {
+			li {
+				a {
+					color: #888;
+
+					&.active {
+						background: #1C2022;
+					}
+				}
+			}
+		}
+	}
+
+	#headerToggle {
+		.toggle {
+			background-color: #888;
+		}
+	}
+
+/* Main */
+
+	#main {
+		> section {
+			&.cover {
+				background-position: auto;
+				-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+			}
+		}
 	}

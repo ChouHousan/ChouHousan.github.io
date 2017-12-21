@@ -1,37 +1,52 @@
 /*
-	Twenty by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Section/Article */
 
-	section > .last-child, section.last-child,
-	article > .last-child,
-	article.last-child {
+	section > .last-child, section.last-child, article > .last-child, article.last-child {
 		margin-bottom: 0;
 	}
 
-/* Banner */
+/* Form */
 
-	#banner {
-		background-image: url("../../images/banner.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	form input[type="text"],
+	form input[type="email"],
+	form input[type="password"],
+	form select,
+	form textarea {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-		#banner .inner {
-			background: #341b2b;
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Header */
+
+	#nav ul li a {
+		color: #888;
+	}
+
+		#nav ul li a.active {
+			background: #1C2022;
 		}
 
-/* CTA */
+	#headerToggle .toggle {
+		background-color: #888;
+	}
 
-	#cta {
-		background-image: url("../../images/banner.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
+/* Main */
+
+	#main > section.cover {
 		background-position: auto;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
